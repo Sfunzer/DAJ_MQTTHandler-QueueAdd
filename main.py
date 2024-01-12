@@ -46,7 +46,7 @@ class MqttPublisher:
             logging.error(f"Error publishing 'false' message: {e}")
 
 class MqttClient:
-    def __init__(self, broker_address, port, publisher_topic, subscriber_topics):
+    def __init__(self, broker_address, port, publisher_topic, subscriber_topics, pause_topic):
         # Initialize MQTT client
         self.client = mqtt.Client()
 
@@ -59,6 +59,9 @@ class MqttClient:
 
         # Set the topic for publishing
         self.publisher_topic = publisher_topic
+
+        #Set the topic for the pause-function
+        self.pause_topic = pause_topic
 
         # Set the callback functions
         self.client.on_connect = self.on_connect
@@ -96,8 +99,8 @@ class MqttClient:
                 logging.info(f"on_connect Subscribed to topic: {topic}")
 
             # Subscribe to the pause topic
-            self.client.subscribe("In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause")
-            logging.info("on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause")
+            self.client.subscribe(self.pause_topic)
+            logging.info(f"on_connect Subscribed to topic: {pause_topic}")
 
         except Exception as e:
             logging.error(f"Error in on_connect: {e}")
@@ -112,22 +115,24 @@ class MqttClient:
                 self.message_queue.put({'topic': msg.topic, 'payload': msg.payload.decode()})
                 print('message submitted')
 
-                # Signal the event to start processing messages
-                self.process_message_event.set()
+                #activates the message processor if the pause-flag is not true. Needed for inital starting of the program.
+                if not self.paused:
+                    self.process_message_event.set()
 
             # Check for 'pause' message and handle it
             elif msg.topic == "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause":
-                command = msg.payload.decode()
+                pause_command = msg.payload.decode()
 
-                if command == 'true':
+                if pause_command == 'true':
                     # Pause message received, stop processing messages
                     self.paused = True
                     logging.info("Received 'pause' command. Pausing message processing.")
 
-                elif command == 'false':
+                elif pause_command == 'false':
                     # Unpause message received, resume processing messages
                     self.paused = False
                     logging.info("Received 'unpause' command. Resuming message processing.")
+                    self.process_message_event.set()
 
             # Process the received message if processing is not paused
             elif not self.paused:
@@ -217,9 +222,10 @@ if __name__ == "__main__":
     port = 1883  # Replace with your MQTT broker port
     subscriber_topics = ["In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"]
     publisher_topic = "Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"
+    pause_topic = "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause"
 
     # Create an instance of the MqttClient class
-    mqtt_client = MqttClient(broker_address, port, publisher_topic, subscriber_topics)
+    mqtt_client = MqttClient(broker_address, port, publisher_topic, subscriber_topics, pause_topic)
 
     # Start the MQTT client
     mqtt_client.start()
