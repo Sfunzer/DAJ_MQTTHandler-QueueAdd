@@ -1,0 +1,178 @@
+2024-01-12 12:30:25,253 - INFO - Connected with result code 0
+2024-01-12 12:30:25,253 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 12:30:25,253 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 12:30:30,058 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 12:30:30,058 - INFO - Processing received message:
+2024-01-12 12:30:30,059 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 12:30:36,560 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 12:30:38,892 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause': true
+2024-01-12 12:30:38,892 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-12 12:30:41,121 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 12:30:47,780 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 12:30:50,618 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause': false
+2024-01-12 12:30:50,618 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-12 12:30:51,723 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 12:30:51,723 - INFO - Processing received message:
+2024-01-12 12:30:51,723 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 12:30:58,224 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 12:32:43,608 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 13:05:59,094 - INFO - Connected with result code 0
+2024-01-12 13:05:59,094 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:05:59,095 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 13:06:06,042 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': false
+2024-01-12 13:06:06,042 - INFO - Processing received message:
+2024-01-12 13:06:21,942 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:06:21,943 - INFO - Processing received message:
+2024-01-12 13:06:21,943 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:06:28,444 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:06:32,831 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:06:32,832 - INFO - Processing received message:
+2024-01-12 13:06:32,832 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:06:33,076 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:06:39,332 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:06:42,833 - INFO - Processing received message:
+2024-01-12 13:06:42,833 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:06:49,334 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:08:32,601 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:08:32,601 - INFO - Processing received message:
+2024-01-12 13:08:32,602 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:08:39,102 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:08,249 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:08,249 - INFO - Processing received message:
+2024-01-12 13:11:08,249 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:08,344 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:08,610 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:08,716 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:08,858 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:09,018 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:09,176 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:09,359 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:09,526 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 13:11:14,750 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:18,250 - INFO - Processing received message:
+2024-01-12 13:11:18,250 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:24,751 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:28,251 - INFO - Processing received message:
+2024-01-12 13:11:28,251 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:34,752 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:38,252 - INFO - Processing received message:
+2024-01-12 13:11:38,252 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:44,753 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:48,252 - INFO - Processing received message:
+2024-01-12 13:11:48,252 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:54,754 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:11:58,253 - INFO - Processing received message:
+2024-01-12 13:11:58,253 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:04,754 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:08,254 - INFO - Processing received message:
+2024-01-12 13:12:08,254 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:14,755 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:18,255 - INFO - Processing received message:
+2024-01-12 13:12:18,255 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:24,292 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 13:12:25,647 - INFO - Connected with result code 5
+2024-01-12 13:12:25,648 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:25,648 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 13:12:26,722 - INFO - Connected with result code 5
+2024-01-12 13:12:26,722 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:26,722 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 13:12:33,250 - INFO - Connected with result code 3
+2024-01-12 13:12:33,250 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:33,250 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 13:12:38,390 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 13:12:38,412 - INFO - Connected with result code 5
+2024-01-12 13:12:38,412 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 13:12:38,412 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 14:17:46,196 - INFO - Connected with result code 0
+2024-01-12 14:17:46,196 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:17:46,196 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 14:18:01,901 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:18:01,902 - INFO - Processing received message:
+2024-01-12 14:18:01,902 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:18:08,403 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:18:25,693 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 14:19:03,237 - INFO - Connected with result code 0
+2024-01-12 14:19:03,238 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:03,238 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 14:19:07,301 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:07,301 - INFO - Processing received message:
+2024-01-12 14:19:07,301 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:13,802 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:23,138 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:23,138 - INFO - Processing received message:
+2024-01-12 14:19:23,138 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:23,312 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:23,467 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:23,625 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:23,790 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:23,942 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:24,189 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:29,639 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:33,139 - INFO - Processing received message:
+2024-01-12 14:19:33,139 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:39,640 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:42,870 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 14:19:43,140 - INFO - Processing received message:
+2024-01-12 14:19:43,140 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:48,834 - INFO - Connected with result code 0
+2024-01-12 14:19:48,834 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:19:48,834 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 14:19:50,411 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:19:50,411 - ERROR - Error in on_message: 'collections.deque' object is not callable
+2024-01-12 14:21:00,772 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 14:21:02,569 - INFO - Connected with result code 0
+2024-01-12 14:21:02,570 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:21:02,570 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 14:21:05,459 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:21:05,459 - INFO - Processing received message:
+2024-01-12 14:21:05,459 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:21:11,961 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:23:39,153 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 14:23:41,748 - INFO - Connected with result code 0
+2024-01-12 14:23:41,749 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:23:41,749 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 14:23:48,912 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:23:48,913 - INFO - Processing received message:
+2024-01-12 14:23:48,913 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:23:51,488 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 14:23:55,414 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:23:58,914 - INFO - Processing received message:
+2024-01-12 14:23:58,914 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:24:05,418 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 14:26:41,194 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 15:52:29,822 - INFO - Connected with result code 0
+2024-01-12 15:52:29,823 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 15:52:29,823 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 15:52:45,582 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-12 17:07:22,021 - INFO - Connected with result code 0
+2024-01-12 17:07:22,021 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:07:22,021 - INFO - on_connect Subscribed to topic: In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause
+2024-01-12 17:07:31,705 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 17:07:31,705 - INFO - Processing received message:
+2024-01-12 17:07:31,705 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:07:38,206 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:07:45,105 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause': true
+2024-01-12 17:07:45,105 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-12 17:07:47,152 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 17:07:51,138 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 17:07:56,842 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 17:08:01,603 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 17:08:06,307 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
+2024-01-12 17:08:10,162 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause': false
+2024-01-12 17:08:10,162 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-12 17:08:10,162 - INFO - Processing received message:
+2024-01-12 17:08:10,162 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:16,663 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:20,163 - INFO - Processing received message:
+2024-01-12 17:08:20,163 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:26,664 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:30,164 - INFO - Processing received message:
+2024-01-12 17:08:30,164 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:36,665 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:40,165 - INFO - Processing received message:
+2024-01-12 17:08:40,165 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:46,667 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:50,166 - INFO - Processing received message:
+2024-01-12 17:08:50,166 - INFO - Published 'true' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:08:56,667 - INFO - Published 'false' to topic: Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch
+2024-01-12 17:09:07,445 - INFO - Received KeyboardInterrupt. Exiting...
