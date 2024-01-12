@@ -42,12 +42,13 @@ class MessageQueue:
         # Callback function called when a 'pause' or 'unpause' message is received
         command = msg.payload.decode()
 
-        if command == 'pause':
+
+        if command == 'true':
             # Pause message received, stop processing messages
             self.process_event.clear()
             print("Received 'pause' command. Pausing message processing.")
 
-        elif command == 'unpause':
+        elif command == 'false':
             # Unpause message received, start processing messages
             self.process_event.set()
             print("Received 'unpause' command. Resuming message processing.")
@@ -152,7 +153,7 @@ class MqttClient:
         print(f"Received message on topic '{msg.topic}': {msg.payload.decode()}")
 
         # Check for 'pause' message and forward it to the message queue
-        if msg.topic == self.message_queue.pause_topic and msg.payload.decode() == 'pause':
+        if msg.topic == self.message_queue.pause_topic and msg.payload.decode() == 'true':
             self.message_queue.on_pause_message(client, userdata, msg)
             return
 
@@ -201,6 +202,11 @@ class MqttClient:
             # Do nothing here or add custom logic for handling 'false' messages
             pass
 
+
+        elif self.last_message['payload'] == '80' :
+            print("Brightness set at 80")
+            #this needs an method for setting the brightness, but theres a discrapancy on the type used in the backend.
+
     def stop(self):
         # Stop the MQTT loop and wait for it to finish
         self.client.loop_stop()
@@ -210,7 +216,7 @@ if __name__ == "__main__":
     # Set MQTT broker address, port, and topics for both publisher and subscriber
     broker_address = "broker.hivemq.com"  # Use HiveMQ public broker
     port = 1883  # Replace with your MQTT broker port
-    subscriber_topics = ["In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"]
+    subscriber_topics = ["In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch", "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Level"]
     publisher_topic = "Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"
 
     # Create an instance of the MqttPublisher class
