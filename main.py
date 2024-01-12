@@ -13,6 +13,7 @@ logging.basicConfig(
     ]
 )
 
+
 class MqttPublisher:
     def __init__(self, client, topic):
         # Reference to the shared MQTT client
@@ -110,6 +111,7 @@ class MqttClient:
             # Callback function called when a new message is received on a subscribed topic
             logging.info(f"Received message on topic '{msg.topic}': {msg.payload.decode()}")
 
+
             if msg.topic == "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch":
                 # Add the received message to the queue
                 self.message_queue.put({'topic': msg.topic, 'payload': msg.payload.decode()})
@@ -189,6 +191,11 @@ class MqttClient:
             # Do nothing here or add custom logic for handling 'false' messages
             pass
 
+
+        elif self.last_message['payload'] == '80' :
+            print("Brightness set at 80")
+            #this needs an method for setting the brightness, but theres a discrapancy on the type used in the backend.
+
     def stop(self):
         # Stop the MQTT loop and wait for it to finish
         self.client.loop_stop()
@@ -220,7 +227,7 @@ if __name__ == "__main__":
     # Set MQTT broker address, port, and topics for both publisher and subscriber
     broker_address = "broker.hivemq.com"  # Use HiveMQ public broker
     port = 1883  # Replace with your MQTT broker port
-    subscriber_topics = ["In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"]
+    subscriber_topics = ["In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch", "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Level"]
     publisher_topic = "Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"
     pause_topic = "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause"
 
