@@ -46,4 +46,4 @@ The current code isn't as optimal as it could be. The following is planned in te
 
 This development is part of a Fontys FHICT challenge. So any errors or inefficienties are part of my learning process. 
 
-/If you have any interest in supporting this project, please send a message!/
+_If you have any interest in supporting this project, please send a message!_
