@@ -4,6 +4,11 @@ import time
 import logging
 import queue
 
+# DAJL Back-end Controller
+# Version 1.03 - For changes see GitHub.
+
+
+# Setup for fault-logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -22,6 +27,7 @@ class MqttPublisher:
         # Set the topic to publish to
         self.topic = topic
 
+        #module to handle the control of the light-device by publishing a switching boolean.
     def publish_true_and_false(self):
         try:
             # Publish 'true' to the specified topic with QoS level 1
@@ -32,7 +38,7 @@ class MqttPublisher:
             threading.Thread(target=self._delayed_publish_false).start()
 
         except Exception as e:
-           logging.error(f"Error publishing messages: {e}")
+            logging.error(f"Error publishing messages: {e}")
 
     def _delayed_publish_false(self):
         try:
@@ -46,8 +52,9 @@ class MqttPublisher:
         except Exception as e:
             logging.error(f"Error publishing 'false' message: {e}")
 
+
 class MqttClient:
-    def __init__(self, broker_address, port, publisher_topic, subscriber_topics, pause_topic):
+    def __init__(self, broker_address, port, light_device_topic, light_signal_topic, pause_topic):
         # Initialize MQTT client
         self.client = mqtt.Client()
 
@@ -55,13 +62,13 @@ class MqttClient:
         self.broker_address = broker_address
         self.port = port
 
-        # Set the topics for subscribing
-        self.subscriber_topics = subscriber_topics
+        # Set the topics for receiving the light-switching signal
+        self.light_signal_topic = light_signal_topic
 
-        # Set the topic for publishing
-        self.publisher_topic = publisher_topic
+        # Set the topic for switching the light-device
+        self.light_device_topic = light_device_topic
 
-        #Set the topic for the pause-function
+        # Set the topic for the pause-function
         self.pause_topic = pause_topic
 
         # Set the callback functions
@@ -72,7 +79,7 @@ class MqttClient:
         self.last_message = None
 
         # Reference to the MqttPublisher instance
-        self.publisher = MqttPublisher(self.client, self.publisher_topic)
+        self.publisher = MqttPublisher(self.client, self.light_device_topic)
 
         # Event for synchronization
         self.publish_event = threading.Event()
@@ -95,13 +102,14 @@ class MqttClient:
             logging.info(f"Connected with result code {rc}")
 
             # Subscribe to the specified topics
-            for topic in self.subscriber_topics:
-                self.client.subscribe(topic)
-                logging.info(f"on_connect Subscribed to topic: {topic}")
 
-            # Subscribe to the pause topic
+            # Subscribe to the light signal topic:
+            self.client.subscribe(self.light_signal_topic)
+            logging.info(f"on_connect Subscribed to topic: {self.light_signal_topic}")
+
+            # Subscribe to the pause topic:
             self.client.subscribe(self.pause_topic)
-            logging.info(f"on_connect Subscribed to topic: {pause_topic}")
+            logging.info(f"on_connect Subscribed to topic: {self.pause_topic}")
 
         except Exception as e:
             logging.error(f"Error in on_connect: {e}")
@@ -111,18 +119,19 @@ class MqttClient:
             # Callback function called when a new message is received on a subscribed topic
             logging.info(f"Received message on topic '{msg.topic}': {msg.payload.decode()}")
 
-
-            if msg.topic == "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch":
+            # Checking if message is received on the light-switch topic
+            if msg.topic == self.light_signal_topic:
                 # Add the received message to the queue
                 self.message_queue.put({'topic': msg.topic, 'payload': msg.payload.decode()})
-                print('message submitted')
+                logging.info('message submitted into queue')
 
-                #activates the message processor if the pause-flag is not true. Needed for inital starting of the program.
+                # activates the message processor if the pause-flag is not true. Needed for initial starting of the
+                # program.
                 if not self.paused:
                     self.process_message_event.set()
 
             # Check for 'pause' message and handle it
-            elif msg.topic == "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause":
+            elif msg.topic == self.pause_topic:
                 pause_command = msg.payload.decode()
 
                 if pause_command == 'true':
@@ -191,11 +200,6 @@ class MqttClient:
             # Do nothing here or add custom logic for handling 'false' messages
             pass
 
-
-        elif self.last_message['payload'] == '80' :
-            print("Brightness set at 80")
-            #this needs an method for setting the brightness, but theres a discrapancy on the type used in the backend.
-
     def stop(self):
         # Stop the MQTT loop and wait for it to finish
         self.client.loop_stop()
@@ -223,16 +227,18 @@ class MqttClient:
             # Clear the event to wait for the next message
             self.process_message_event.clear()
 
+
 if __name__ == "__main__":
-    # Set MQTT broker address, port, and topics for both publisher and subscriber
+
+    # Application-settings: Broker-settings are for both publisher and subscriber.
     broker_address = "broker.hivemq.com"  # Use HiveMQ public broker
     port = 1883  # Replace with your MQTT broker port
-    subscriber_topics = ["In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch", "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Level"]
-    publisher_topic = "Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"
+    light_signal_topic = "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"
+    light_device_topic = "Out/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch"
     pause_topic = "In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Pause"
 
     # Create an instance of the MqttClient class
-    mqtt_client = MqttClient(broker_address, port, publisher_topic, subscriber_topics, pause_topic)
+    mqtt_client = MqttClient(broker_address, port, light_device_topic, light_signal_topic, pause_topic)
 
     # Start the MQTT client
     mqtt_client.start()
