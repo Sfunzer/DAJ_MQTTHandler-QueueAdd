@@ -430,3 +430,112 @@
 2024-01-20 14:30:47,813 - INFO - message submitted into queue
 2024-01-20 14:30:50,646 - INFO - Received message on topic 'In/Lights/Location/qggrVblFaQbcpslyTPRdU2cSBHy1/Switch': true
 2024-01-20 14:30:50,646 - INFO - message submitted into queue
+2024-01-20 14:57:34,904 - INFO - Received KeyboardInterrupt. Exiting...
+2024-01-20 14:57:40,459 - INFO - Processing received message:
+2024-01-20 14:57:40,460 - INFO - Processing received message:
+2024-01-20 14:57:40,461 - INFO - Processing received message:
+2024-01-20 15:45:50,254 - INFO - Processing received message:
+2024-01-20 15:45:50,255 - INFO - Processing received message:
+2024-01-20 15:45:50,257 - INFO - Processing received message:
+2024-01-20 16:20:22,128 - INFO - Processing received message:
+2024-01-20 16:29:55,614 - INFO - Processing received message:
+2024-01-20 16:29:55,616 - INFO - Processing received message:
+2024-01-20 16:33:05,771 - INFO - Processing received message:
+2024-01-20 16:44:20,142 - INFO - Processing received message:
+2024-01-20 16:44:20,144 - INFO - Processing received message:
+2024-01-20 16:46:02,149 - INFO - Received message on topic 'test/pause': true
+2024-01-20 16:46:02,149 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 16:46:02,153 - INFO - Processing received message:
+2024-01-20 16:46:02,155 - INFO - Processing received message:
+2024-01-20 16:46:57,874 - INFO - Received message on topic 'test/pause': true
+2024-01-20 16:46:57,874 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 16:46:57,874 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 16:46:57,878 - INFO - Processing received message:
+2024-01-20 16:46:57,879 - INFO - Processing received message:
+2024-01-20 16:47:29,171 - INFO - Received message on topic 'test/pause': true
+2024-01-20 16:47:29,171 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 16:47:29,171 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 16:47:29,172 - INFO - Received message on topic 'test/pause': false
+2024-01-20 16:47:29,172 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-20 16:47:29,173 - INFO - Processing received message:
+2024-01-20 16:47:29,175 - INFO - Processing received message:
+2024-01-20 16:54:57,813 - INFO - Received message on topic 'test/pause': true
+2024-01-20 16:54:57,813 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 16:54:57,818 - INFO - Processing received message:
+2024-01-20 16:54:57,819 - INFO - Processing received message:
+2024-01-20 16:56:05,390 - INFO - Received message on topic 'test/pause': true
+2024-01-20 16:56:05,390 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 16:56:05,394 - INFO - Processing received message:
+2024-01-20 16:56:05,396 - INFO - Processing received message:
+2024-01-20 16:57:46,836 - INFO - Processing received message:
+2024-01-20 16:57:46,837 - INFO - Processing received message:
+2024-01-20 16:58:13,660 - INFO - Processing received message:
+2024-01-20 16:58:13,661 - INFO - Processing received message:
+2024-01-20 16:59:38,531 - INFO - Received message on topic 'test/pause': true
+2024-01-20 16:59:38,531 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 16:59:38,535 - INFO - Processing received message:
+2024-01-20 16:59:38,536 - INFO - Processing received message:
+2024-01-20 17:00:30,091 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:00:30,091 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:00:30,092 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 17:00:30,092 - INFO - Received message on topic 'test/pause': false
+2024-01-20 17:00:30,092 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-20 17:00:30,094 - INFO - Processing received message:
+2024-01-20 17:00:30,096 - INFO - Processing received message:
+2024-01-20 17:02:05,477 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:02:05,477 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:02:05,477 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 17:02:05,478 - INFO - Received message on topic 'test/pause': false
+2024-01-20 17:02:05,478 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-20 17:02:05,479 - INFO - Processing received message:
+2024-01-20 17:02:05,481 - INFO - Processing received message:
+2024-01-20 17:03:12,331 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:03:12,331 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:03:12,331 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 17:03:12,335 - INFO - Processing received message:
+2024-01-20 17:03:12,337 - INFO - Processing received message:
+2024-01-20 17:03:33,457 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:03:33,457 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:03:33,457 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 17:03:33,458 - INFO - Received message on topic 'test/pause': false
+2024-01-20 17:03:33,458 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-20 17:03:33,459 - INFO - Processing received message:
+2024-01-20 17:03:33,461 - INFO - Processing received message:
+2024-01-20 17:32:41,521 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:32:41,521 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:32:41,521 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 17:32:41,522 - INFO - Received message on topic 'test/pause': false
+2024-01-20 17:32:41,522 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-20 17:32:41,523 - INFO - Processing received message:
+2024-01-20 17:32:41,525 - INFO - Processing received message:
+2024-01-20 17:33:38,582 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:33:38,582 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:33:38,582 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 17:33:38,582 - INFO - Received message on topic 'test/pause': false
+2024-01-20 17:33:38,582 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-20 17:33:38,584 - INFO - Processing received message:
+2024-01-20 17:33:38,585 - INFO - Processing received message:
+2024-01-20 17:33:38,587 - INFO - Processing received message:
+2024-01-20 17:41:10,914 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:41:10,914 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:41:10,914 - INFO - Received message on topic 'test/topic': some_payload
+2024-01-20 17:41:10,915 - INFO - Received message on topic 'test/pause': false
+2024-01-20 17:41:10,915 - INFO - Received 'unpause' command. Resuming message processing.
+2024-01-20 17:41:10,916 - INFO - Processing received message:
+2024-01-20 17:41:10,917 - INFO - Processing received message:
+2024-01-20 17:41:10,920 - INFO - Processing received message:
+2024-01-20 17:43:07,789 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:43:07,789 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:43:07,794 - INFO - Processing received message:
+2024-01-20 17:43:07,795 - INFO - Processing received message:
+2024-01-20 17:43:07,797 - INFO - Processing received message:
+2024-01-20 17:45:23,578 - INFO - Received message on topic 'test/pause': true
+2024-01-20 17:45:23,578 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 17:45:23,583 - INFO - Processing received message:
+2024-01-20 17:45:23,584 - INFO - Processing received message:
+2024-01-20 17:45:23,586 - INFO - Processing received message:
+2024-01-20 19:09:23,476 - INFO - Received message on topic 'test/pause': true
+2024-01-20 19:09:23,477 - INFO - Received 'pause' command. Pausing message processing.
+2024-01-20 19:09:23,481 - INFO - Processing received message:
+2024-01-20 19:09:23,482 - INFO - Processing received message:
+2024-01-20 19:09:23,484 - INFO - Processing received message:
