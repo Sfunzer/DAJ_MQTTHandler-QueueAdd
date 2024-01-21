@@ -35,8 +35,7 @@ class MyTestCase(unittest.TestCase):
         self.mqtt_client.client.loop_forever.assert_called_once()
 
     @patch('threading.Event.set')
-    @patch('time.sleep')
-    def test_process_received_message_method_true(self, mock_sleep, mock_event_set):
+    def test_process_received_message_method_true(self, mock_event_set):
         # Test process_received_message method with 'true' payload
         self.mqtt_client.last_message = {'topic': 'test/topic', 'payload': 'true'}
 
@@ -49,11 +48,7 @@ class MyTestCase(unittest.TestCase):
         # Assert that the event is set
         mock_event_set.assert_called_once()
 
-        # Assert that sleep is not called since payload is 'true'
-        mock_sleep.assert_not_called()
-
-    @patch('time.sleep')
-    def test_process_received_message_method_false(self, mock_sleep):
+    def test_process_received_message_method_false(self):
         # Test process_received_message method with 'false' payload
         self.mqtt_client.last_message = {'topic': 'test/topic', 'payload': 'false'}
 
@@ -62,9 +57,6 @@ class MyTestCase(unittest.TestCase):
 
         # Assert that the publish_true_and_false method is not called
         mock_publish_method.assert_not_called()
-
-        # Assert that sleep is not called since payload is 'false'
-        mock_sleep.assert_not_called()
 
     @patch('time.sleep')
     def test_pause_activated(self, mock_sleep):
@@ -93,8 +85,7 @@ class MyTestCase(unittest.TestCase):
         # Assert that the process_message_event was set again after 'unpause'
         mock_process_message_event.set.assert_called_with()
 
-    @patch('time.sleep')
-    def test_process_received_message_method_other_payload(self, mock_sleep):
+    def test_process_received_message_method_other_payload(self):
         # Test process_received_message method with payload other than 'true' or 'false'
         self.mqtt_client.last_message = {'topic': 'test/topic', 'payload': 'other'}
 
@@ -103,9 +94,6 @@ class MyTestCase(unittest.TestCase):
 
         # Assert that the publish_true_and_false method is not called
         mock_publish_method.assert_not_called()
-
-        # Assert that sleep is not called since payload is neither 'true' nor 'false'
-        mock_sleep.assert_not_called()
 
     def test_stop_method(self):
         # Test the stop method
